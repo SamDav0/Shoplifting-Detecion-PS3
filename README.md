@@ -21,7 +21,7 @@ High-level components:
 - Adaptive global average pooling
 - Fully connected classification head
 
-*(Insert model architecture diagram image here in your repo, e.g. `assets/model_architecture.png`)*
+![Model Architecture](assets/model_architecture.png)
 
 ---
 
