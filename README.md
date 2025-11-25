@@ -7,7 +7,7 @@ Rather than analysing raw RGB frames, the pipeline extracts **17 human body keyp
 - **Normal**
 - **Shoplifting** (bag or pocket)
 
-**Sliding-window inference (important):**
+**Sliding-window inference:**
 - **Window size:** 240 frames  
 - **Stride:** 100 frames  
 The sliding window ensures temporal continuity and overlapping context between windows. Each window is classified independently; final video-level decision can be obtained by majority voting across windows.
@@ -32,3 +32,5 @@ High-level components:
 ```bash
 pip install ultralytics torch torchvision torchaudio
 pip install numpy matplotlib opencv-python scikit-learn tqdm seaborn
+
+##
