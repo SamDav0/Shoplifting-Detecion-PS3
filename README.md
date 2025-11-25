@@ -36,13 +36,37 @@ pip install numpy matplotlib opencv-python scikit-learn tqdm seaborn
 
 ## Running Instructions
 
-### **1. Using the Pre-Trained Model (Recommended)**
+### **Using the Pre-Trained Model (Recommended)**
 
-1. Open **`Video-Prediction.py`**.
-
-2. Set the model path:
+ 1. Open **`Video-Prediction.py`**.
+ 2. Set the model path:
 
    ```python
    MODEL_NAME = "./models/Pre-Trained/sgt_model_2class_bs32.pth"
    ```
+ 3. Set the video path
+   ```python
+   VIDEO_PATH="path_to_your_video"
+   ```
+ 4. Run Video-Prediction.py
+
+### **Training the Model (If You Want to Verify Metrics)
+ 1. Download the JSON Dataset
+    https://drive.google.com/drive/folders/1kj3KtDQp_N1juB0cxY-QjyZqfp3mQ7W0 (dataset link)
+ 2. Place the folder Dataset-JSON inside the project root directory.
+ 3. Navigate to the preprocessing directory and run JSON-numpy.py
+    ```bash
+    cd Pre-Processing
+    python3 JSON-numpy.py
+    ```
+ 4. After Pre-processing is done, navigate to Training-Script and run training.py
+    ```bash
+    cd Training-Script
+    python3 training.py
+    ```
+ 5. Confusion Matrix and Loss(validation and training) v/s Epochs
+    ![Confusion Matrix](assets/confusion_matrix.png)
+    ![Loss Curve](assets/trainingloss_validationloss.png)
+    
+    
 
