@@ -58,7 +58,12 @@ pip install numpy matplotlib opencv-python scikit-learn tqdm seaborn
     https://drive.google.com/drive/folders/1kj3KtDQp_N1juB0cxY-QjyZqfp3mQ7W0 (dataset link)
     
  2. Place the folder Dataset-JSON inside the project root directory.Final Structure should look like this
-<pre> ``` Shoplifting-Detection-PS3/ ├── Dataset-JSON/ ├── Pre-Processing/ ├── Training-Script/ ├── models/ └── Video-Prediction.py ``` </pre>
+    Shoplifting-Detection-PS3/
+    ├── Dataset-JSON/
+    ├── Pre-Processing/
+    ├── Training-Script/
+    ├── models/
+    └── Video-Prediction.py
     
  4. Navigate to the preprocessing directory and run JSON-numpy.py
     ```bash
